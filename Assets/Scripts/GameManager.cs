@@ -4,8 +4,21 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
+    private Vector3 startingLine;
     IEnumerator isGameRunning; //This variable can change name. It is necessary to "pause" the loop because if u directly pause it, it will start from initial.
+    [SerializeField]
+    private GameObject[] groceriesList;
+    [SerializeField]
+    private GameObject[] junkList;
+
+    [HideInInspector]
+    public bool endGame = false;
+
+
+    void Awake()
+    {
+        startingLine = new Vector3(Random.Range(-2.2f, 2.2f), 5.7f, 0f);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +30,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        startingLine = new Vector3(Random.Range(-2.2f, 2.2f), 5.7f, 0f);
+
         if (Input.GetKeyDown(KeyCode.O))
         {
             Debug.Log("Game Loop Has been resumed");
@@ -32,14 +47,13 @@ public class GameManager : MonoBehaviour
 
     IEnumerator GameLoop()
     {
-        while (true)
+        while (endGame == false)
         {
-            //This for loop is just to test if the pause/resume button works
-            for(int i = 0; i < 10000; i++)
-            {
-                Debug.Log(i);
-                yield return new WaitForSeconds(0.5f);
-            }
+            Instantiate(groceriesList[Random.Range(0, groceriesList.Length)], startingLine, Quaternion.identity);
+            yield return new WaitForSeconds(1.7f); // DELAY FOR EACH INSTANTIATE 
+
+            Instantiate(junkList[Random.Range(0, junkList.Length)], startingLine, Quaternion.identity);
+            yield return new WaitForSeconds(2.3f); // DELAY FOR EACH INSTANTIATE 
 
         }
     }
