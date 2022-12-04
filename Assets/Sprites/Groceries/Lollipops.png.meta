@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d76fa3043bd26ca4bb1be9b133971c09
+guid: 028f6ef2a6cdaa240b2626b77ac6c4cc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shopping Basket_0
+      name: 23232-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 44
-        width: 304
-        height: 211
+        x: 33
+        y: 50
+        width: 167
+        height: 283
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3081f45ffbe1e0f46aaf621f8ea5c302
-      internalID: -2133717778
+      spriteID: 314c59c65c2ef054c973777c390f81fe
+      internalID: -375987187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shopping Basket_1
+      name: 23232-removebg-preview_1
       rect:
         serializedVersion: 2
-        x: 425
-        y: 66
-        width: 340
-        height: 158
+        x: 236
+        y: 50
+        width: 168
+        height: 284
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +151,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec3f46de008140144915d3e12046135e
-      internalID: 2029082976
+      spriteID: 5b7aa3726b9564a40858dce0b5bf976b
+      internalID: 128792900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 23232-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 50
+        width: 168
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae8782363d3c7f48942a273577d17fc
+      internalID: 858409882
       vertices: []
       indices: 
       edges: []
@@ -168,8 +189,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Shopping Basket_0: -2133717778
-      Shopping Basket_1: 2029082976
+      23232-removebg-preview_0: -375987187
+      23232-removebg-preview_2: 858409882
+      23232-removebg-preview_1: 128792900
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
