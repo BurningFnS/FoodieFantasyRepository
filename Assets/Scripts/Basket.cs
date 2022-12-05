@@ -11,6 +11,7 @@ public class Basket : MonoBehaviour
 
     private List<string> ItemList = new List<string>();
     private List<string> JunkList = new List<string>();
+    private List<string> BadItemsList = new List<string>();
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +41,7 @@ public class Basket : MonoBehaviour
         }
 
         if (other.gameObject.tag == "Junk")
-        {;
+        {
             JunkList.Add(gameObject.name);
             Debug.Log("JunkList Count: " + JunkList.Count);
             Destroy(other.gameObject);
@@ -50,6 +51,20 @@ public class Basket : MonoBehaviour
                 Debug.Log("Fatty");
                 Lose.gameObject.SetActive(true);
                 gamemanager.endGame = true;
+
+            }
+        }
+
+        if (other.gameObject.tag == "Inedible")
+        {
+            
+            BadItemsList.Add(gameObject.name);
+            Debug.Log("BadItemsList Count: " + BadItemsList.Count);
+            Destroy(other.gameObject);
+
+            if (BadItemsList.Count >= 3)
+            {
+                Debug.Log("-1 point");
 
             }
         }

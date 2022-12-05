@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private GameObject[] groceriesList;
     [SerializeField]
     private GameObject[] junkList;
+    [SerializeField]
+    private GameObject[] baditemList;
 
     [HideInInspector]
     public bool endGame = false;
@@ -53,6 +55,9 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1.7f); // DELAY FOR EACH INSTANTIATE 
 
             Instantiate(junkList[Random.Range(0, junkList.Length)], startingLine, Quaternion.identity);
+            yield return new WaitForSeconds(2.3f); // DELAY FOR EACH INSTANTIATE 
+
+            Instantiate(baditemList[Random.Range(0, baditemList.Length)], startingLine, Quaternion.identity);
             yield return new WaitForSeconds(2.3f); // DELAY FOR EACH INSTANTIATE 
 
         }

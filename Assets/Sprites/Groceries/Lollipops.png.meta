@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 23232-removebg-preview_0
+      name: Lollipops_0
       rect:
         serializedVersion: 2
         x: 33
@@ -124,20 +124,20 @@ TextureImporter:
         width: 167
         height: 283
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 314c59c65c2ef054c973777c390f81fe
-      internalID: -375987187
+      spriteID: 453864a30de71954e85610e4caf29b21
+      internalID: 1097101102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 23232-removebg-preview_1
+      name: Lollipops_1
       rect:
         serializedVersion: 2
         x: 236
@@ -145,20 +145,20 @@ TextureImporter:
         width: 168
         height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b7aa3726b9564a40858dce0b5bf976b
-      internalID: 128792900
+      spriteID: 4ddae0bd30ef07f4fb94caba6ae35dfa
+      internalID: 1092846450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 23232-removebg-preview_2
+      name: Lollipops_2
       rect:
         serializedVersion: 2
         x: 441
@@ -166,14 +166,14 @@ TextureImporter:
         width: 168
         height: 283
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dae8782363d3c7f48942a273577d17fc
-      internalID: 858409882
+      spriteID: 94bf6bd79018bcf4389a219c169173b3
+      internalID: -405754462
       vertices: []
       indices: 
       edges: []
@@ -189,9 +189,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      23232-removebg-preview_0: -375987187
-      23232-removebg-preview_2: 858409882
-      23232-removebg-preview_1: 128792900
+      Lollipops_2: -405754462
+      Lollipops_1: 1092846450
+      Lollipops_0: 1097101102
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

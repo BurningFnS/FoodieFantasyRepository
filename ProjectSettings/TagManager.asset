@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Food
   - Junk
+  - Inedible
   layers:
   - Default
   - TransparentFX
