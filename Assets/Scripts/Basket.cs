@@ -46,9 +46,9 @@ public class Basket : MonoBehaviour
             Debug.Log("JunkList Count: " + JunkList.Count);
             Destroy(other.gameObject);
 
-            if (JunkList.Count >= 1)
+            if (JunkList.Count >= 3)
             {
-                Debug.Log("Fatty");
+                Debug.Log("You Lost! Too much junk food");
                 Lose.gameObject.SetActive(true);
                 gamemanager.endGame = true;
 

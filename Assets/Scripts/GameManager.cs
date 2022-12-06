@@ -79,10 +79,12 @@ public class GameManager : MonoBehaviour
 
     void pausing()
     {
+        Debug.Log("Game is paused!");
         StopCoroutine(isGameRunning);
     }
     void resume()
     {
+        Debug.Log("Game is resumed!");
         StartCoroutine(isGameRunning);
 
     }
