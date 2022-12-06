@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public bool endGame = false;
 
+    public Button pauseButton;
+    public Button resumeButton;
+
 
     void Awake()
     {
@@ -27,6 +31,12 @@ public class GameManager : MonoBehaviour
     {
         isGameRunning = GameLoop();
         StartCoroutine(isGameRunning);
+
+        Button pausebtn = pauseButton.GetComponent<Button>();
+        pausebtn.onClick.AddListener(pausing);
+
+        Button resumebtn = resumeButton.GetComponent<Button>();
+        resumebtn.onClick.AddListener(resume);
     }
 
     // Update is called once per frame
@@ -34,17 +44,19 @@ public class GameManager : MonoBehaviour
     {
         startingLine = new Vector3(Random.Range(-2.2f, 2.2f), 5.7f, 0f);
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            Debug.Log("Game Loop Has been resumed");
-            StartCoroutine(isGameRunning);
-        }
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            Debug.Log("Game Loop Has been paused");
-            StopCoroutine(isGameRunning);
-        }   
+        /*------------------------------OLD PAUSE BUTTON----------------------------*/
+        //if (Input.GetKeyDown(KeyCode.O))
+        //{
+        //    Debug.Log("Game Loop Has been resumed");
+        //    StartCoroutine(isGameRunning);
+        //}
+
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    Debug.Log("Game Loop Has been paused");
+        //    StopCoroutine(isGameRunning);
+        //}   
     }
 
     IEnumerator GameLoop()
@@ -60,6 +72,19 @@ public class GameManager : MonoBehaviour
             Instantiate(baditemList[Random.Range(0, baditemList.Length)], startingLine, Quaternion.identity);
             yield return new WaitForSeconds(2.3f); // DELAY FOR EACH INSTANTIATE 
 
+            Debug.Log("Game is running");
+            yield return new WaitForSeconds(1f);
         }
     }
+
+    void pausing()
+    {
+        StopCoroutine(isGameRunning);
+    }
+    void resume()
+    {
+        StartCoroutine(isGameRunning);
+
+    }
+
 }

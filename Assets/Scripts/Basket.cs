@@ -46,7 +46,7 @@ public class Basket : MonoBehaviour
             Debug.Log("JunkList Count: " + JunkList.Count);
             Destroy(other.gameObject);
 
-            if (JunkList.Count > 1)
+            if (JunkList.Count >= 1)
             {
                 Debug.Log("Fatty");
                 Lose.gameObject.SetActive(true);
